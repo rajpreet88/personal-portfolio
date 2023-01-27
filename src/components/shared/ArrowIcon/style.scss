@@ -1,0 +1,17 @@
+@import "../../../style-config/mixin.scss";
+@import "../../../style-config/variable.scss";
+
+.arrow-icon {
+    width: 25px;
+    height: 25px;
+    background: $red;
+    border-radius: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+    font-weight: 700;
+    svg {
+        transform: rotate(-45deg);
+    }
+}

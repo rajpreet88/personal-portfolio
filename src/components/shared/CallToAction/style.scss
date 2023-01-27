@@ -1,0 +1,20 @@
+@import "../../../style-config/variable.scss";
+@import "../../../style-config/mixin.scss";
+
+.call-to-action {
+    height: 47px;
+    width: fit-content;
+    padding: 0 7px 0 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 191, 191);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    color: $black-light;
+    position: relative;
+    overflow: hidden;
+    @include typography(18px, 500, 1);
+    margin-left: 20px;
+}
+

@@ -1,0 +1,39 @@
+.Intro-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(121deg, #4a4445 9%, #3a3234 41%, #181a1f 80%);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    .vector-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.4;
+        background-image: url("../../images/vector-background.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .cloud {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    .cloud-soft {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        mix-blend-mode: soft-light;
+
+    }
+    .content{
+        width: 1200px;
+    }
+}

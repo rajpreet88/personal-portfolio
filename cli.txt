@@ -1,0 +1,5 @@
+1. npm init -y
+2. npm create vite@latest
+3. npm run dev
+4. npm i sass --save
+5. npm i react-icons
