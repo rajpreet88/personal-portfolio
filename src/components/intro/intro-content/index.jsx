@@ -39,17 +39,21 @@ const IntroContent = () => {
                     <img
                         src={excited}
                         alt="excited"
+                        className="excited"
                     />
                     <div className="highlights horizontal">
-                        <div className="icon">
-                            <img src={web3} />
-                        </div>
+                        <img
+                            src={web3}
+                            className="icon"
+                        />
+
                         <div className="text">Blockchain Developer</div>
                     </div>
                     <div className="highlights vertical">
-                        <div className="icon">
-                            <img src={javascript} />    
-                        </div>
+                        <img
+                            src={javascript}
+                            className="icon"
+                        />
                         <div className="text">MERN Stack Developer</div>
                     </div>
                 </div>
