@@ -6,10 +6,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 12px;
+    margin-top: 20px;
 
     .app-logo {
-        width: 100px;
+        width: 80px;
         cursor: pointer;
         z-index: 1;
         img {
@@ -37,6 +37,9 @@
                 box-shadow: inset 200px 0 0 0 $white;
                 color: $black;
             }
+        }
+        .call-to-action{
+            margin-left: 25px;
         }
     }
 }

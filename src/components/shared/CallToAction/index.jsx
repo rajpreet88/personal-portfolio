@@ -7,7 +7,7 @@ const CallToAction = (props) => {
     return (
         <div className="call-to-action">
             <span className="text">{props.text}</span>
-            <ArrowIcon />
+            <ArrowIcon className="arrow-icon" />
         </div>
     );
 };

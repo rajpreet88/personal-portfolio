@@ -18,7 +18,10 @@ const Navigation = () => {
                 <span className="navigation-item">Portfolio</span>
                 <span className="navigation-item">Blogs & Articles</span>
                 {/* <span className="navigation-item"></span> */}
-                <CallToAction text="Contact me"/>
+                <CallToAction
+                    text="Contact me"
+                    className="call-to-action"
+                />
             </div>
         </div>
     );
