@@ -24,8 +24,8 @@
         transition: all ease 500ms;
     }
     .icon{
-        width: 21px;
-        height: 21px;
+        width: 25px;
+        height: 25px;
         background-color: $red;
         border-radius: 41px;
         display: flex;
@@ -52,6 +52,10 @@
             svg {
                 transform: rotate(0);
             }
+        }
+        .icon{
+            font-size: large;
+            font-weight: 700;
         }
     }
 }

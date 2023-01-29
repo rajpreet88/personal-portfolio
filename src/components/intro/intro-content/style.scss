@@ -83,7 +83,7 @@
                 .text {
                     padding: 10px;
                     @include typography(14px, 400, 18px);
-                    color: $black-light;
+                    color: $black;
                 }
 
                 &.horizontal {
@@ -127,7 +127,7 @@
                     .text {
                         padding: 0 10px;
                         @include typography(14px, 400, 18px);
-                        color: $black-light;
+                        color: $black;
                         margin-top: 10px;
                     }
                 }

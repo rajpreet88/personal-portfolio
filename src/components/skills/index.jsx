@@ -28,8 +28,10 @@ const Skills = () => {
                         necessitatibus assumenda perspiciatis obcaecati id
                         provident sint laudantium.
                     </p>
-                    <CallToAction text="Download CV"
-                    icon={AiOutlineCloudDownload} />
+                    <CallToAction
+                        text="Download CV"
+                        icon={<AiOutlineCloudDownload />}
+                    />
                 </div>
             </div>
         </Section>
