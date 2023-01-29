@@ -4,10 +4,15 @@ import ArrowIcon from "../ArrowIcon";
 import "./style.scss";
 
 const CallToAction = (props) => {
+    // {text, icon, action}
     return (
         <div className="call-to-action">
             <span className="text">{props.text}</span>
-            <ArrowIcon className="arrow-icon" />
+            {props.icon ? (
+                <div className="icon">{props.icon}</div>
+            ) : (
+                <ArrowIcon className="arrow-icon" />
+            )}
         </div>
     );
 };

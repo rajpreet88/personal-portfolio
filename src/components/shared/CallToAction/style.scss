@@ -17,10 +17,22 @@
     @include typography(18px, 500, 1);
     // margin-left: 20px;
     .text,
+    .icon,
     .arrow-icon {
         position: relative;
         z-index: 1;
-        // transition: all ease 500ms;
+        transition: all ease 500ms;
+    }
+    .icon{
+        width: 21px;
+        height: 21px;
+        background-color: $red;
+        border-radius: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        margin-left: 8px;
     }
     &:before {
         position: absolute;
@@ -36,8 +48,8 @@
         &:before {
             transform: translateX(0);
         }
-        .arrow-icon{
-            svg{
+        .arrow-icon {
+            svg {
                 transform: rotate(0);
             }
         }
