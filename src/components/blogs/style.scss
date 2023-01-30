@@ -1,0 +1,9 @@
+@import "../../style-config/mixin.scss";
+@import "../../style-config/variable.scss";
+
+.blogs-content-wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+    justify-content: space-evenly;
+}

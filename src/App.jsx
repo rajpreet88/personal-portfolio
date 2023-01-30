@@ -4,6 +4,7 @@ import "./app.scss";
 import Skills from "./components/skills";
 import Intro from "./components/intro";
 import Portfolio from "./components/portfolio";
+import Blogs from "./components/blogs";
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Intro />
             <Skills />
             <Portfolio />
+            <Blogs />
         </div>
     );
 };
