@@ -1,13 +1,16 @@
 const filtersData = [
     {
         name: "All",
-        id: "All",
+        id: "all",
     },
     {
         name: "Products",
         id: "product",
     },
-    { name: "Web Pages", id: "web-page" },
+    {
+        name: "Web Pages",
+        id: "web-page",
+    },
     {
         name: "Web Apps",
         id: "web-app",

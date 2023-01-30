@@ -1,46 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import filtersData from "../../shared/constants/filtersData";
 
 import "./style.scss";
 
-// const filtersData = [
-//     {
-//         name: "All",
-//         id: "All",
-//     },
-//     {
-//         name: "Products",
-//         id: "product",
-//     },
-//     { name: "Web Pages", id: "web-page" },
-//     {
-//         name: "Web Apps",
-//         id: "web-app",
-//     },
-//     {
-//         name: "Mobile Apps",
-//         id: "mobile-app",
-//     },
-//     {
-//         name: "Blockchain",
-//         id: "blockchain-app",
-//     },
-// ];
+const Filters = (props) => {
+    //{filterProjects}
+    const [active, setActive] = useState("");
 
-const Filters = () => {
+    const clickHandler = (id) => {
+        setActive(id);
+        props.filterProjects(id);
+    };
+
     return (
-        <>
-        Hello
-        {/* <ul className="filters-menu-item">
+        <ul className="filter-menu-items">
             {filtersData.map((item, index) => {
                 return (
                     <li
-                    className="filter-menu-item"
-                    key={item.id}
-                    ></li>
-                    );
-                })}
-        </ul> */}
-                </>
+                        className={`filter-menu-item ${
+                            active === item.id ? "active" : ""
+                        }`}
+                        key={item.id}
+                        onClick={() => clickHandler(item.id)}
+                    >
+                        {item.name}
+                    </li>
+                );
+            })}
+        </ul>
     );
 };
 
