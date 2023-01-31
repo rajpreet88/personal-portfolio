@@ -1,0 +1,32 @@
+@import "../../../style-config/mixin.scss";
+@import "../../../style-config/variable.scss";
+
+.contact-info-box {
+    // display: ;
+    background-color: $black-lighter;
+    color: $gray;
+    width: 375px;
+    padding: 30px;
+    border-radius: 6px;
+    h4 {
+        @include typography(15px, 400, 24px);
+    }
+    .contact-option {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        svg {
+            color: rgb(57, 137, 230);
+            font-size: 28px;
+        }
+        .text {
+            color: $white;
+            margin-left: 15px;
+        }
+        .email {
+            color: rgb(99, 99, 246);
+            margin-left: 15px;
+            font-weight: 500;
+        }
+    }
+}

@@ -3,3 +3,7 @@
 3. npm run dev
 4. npm i sass --save
 5. npm i react-icons
+6. npm i emailjs-com
+7. npm i react-hook-form
+8. npm i react-toastify
+9. npm i dotenv
