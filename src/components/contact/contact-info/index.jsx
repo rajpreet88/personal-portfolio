@@ -22,7 +22,7 @@ const ContactInfo = () => {
                     href="https://www.google.co.in"
                     target="_blank"
                 >
-                    <span className="email">fullstackmaverick@gmail.com</span>
+                    <span className="email">fullstackweb3maverick@gmail.com</span>
                 </a>
             </div>
             <div className="div-bg1">
