@@ -2,6 +2,7 @@ import React from "react";
 
 import "./style.scss";
 
+import backgroundForm from "../../../images/BackgroundForm.png";
 import { MdPhone, MdEmail } from "react-icons/md";
 
 const ContactInfo = () => {
@@ -23,6 +24,16 @@ const ContactInfo = () => {
                 >
                     <span className="email">fullstackmaverick@gmail.com</span>
                 </a>
+            </div>
+            <div className="div-bg1">
+                <img
+                    src={backgroundForm}
+                    className="bg1"
+                />
+                <img
+                    src={backgroundForm}
+                    className="bg2"
+                />
             </div>
         </div>
     );

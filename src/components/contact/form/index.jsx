@@ -49,10 +49,10 @@ const Form = () => {
                     <input
                         type="text"
                         name="from_name"
-                        placeholder="Name"
+                        placeholder="Name*"
                         //Validation check
                         {...register("from_name", {
-                            required: "Name is required",
+                            required: "*Name is required",
                         })}
                     />
                     {errors?.from_name?.message && (
@@ -64,9 +64,9 @@ const Form = () => {
                     <input
                         type="text"
                         name="reply_to"
-                        placeholder="Email"
+                        placeholder="Email*"
                         {...register("reply_to", {
-                            required: "Email is required",
+                            required: "*Email is required",
                             pattern: {
                                 value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i,
                                 message: "Invalid email address",
@@ -82,9 +82,9 @@ const Form = () => {
                     <input
                         type="text"
                         name="phone_number"
-                        placeholder="Phone"
+                        placeholder="Phone*"
                         {...register("phone_number", {
-                            required: "Phone number is required",
+                            required: "*Phone number is required",
                             minLength: {
                                 value: 8,
                                 message: "Phone number not valid",
@@ -101,9 +101,9 @@ const Form = () => {
                     <input
                         type="text"
                         name="subject"
-                        placeholder="Subject"
+                        placeholder="Subject*"
                         {...register("subject", {
-                            required: "Subject is required",
+                            required: "*Subject is required",
                             minLength: {
                                 value: 10,
                                 message: "Minimum 10 character required",
@@ -118,9 +118,9 @@ const Form = () => {
                     <textarea
                         className="textarea"
                         name="message"
-                        placeholder="Your message"
+                        placeholder="Your message*"
                         {...register("message", {
-                            required: "Message is required",
+                            required: "*Message is required",
                             minLength: {
                                 value: 10,
                                 message: "Minimum 10 characters",
