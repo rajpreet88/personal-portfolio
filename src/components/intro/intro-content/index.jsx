@@ -7,6 +7,8 @@ import web3 from "../../../assets/blockchain.svg";
 import eth from "../../../assets/eth.svg";
 import javascript from "../../../assets/javascript.svg";
 
+import { scrollToSection } from "../../utils/helper";
+
 import "./style.scss";
 
 const IntroContent = () => {
@@ -33,7 +35,10 @@ const IntroContent = () => {
                         aliquid unde dolorem aut distinctio neque at, a libero
                         non cum dolorum labore. Impedit, atque obcaecati!
                     </p>
-                    <CallToAction text="Get Started" />
+                    <CallToAction
+                        text="Get Started"
+                        action={() => scrollToSection("contact")}
+                    />
                 </div>
                 <div className="right-col">
                     <img

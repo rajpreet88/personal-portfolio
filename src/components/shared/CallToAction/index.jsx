@@ -6,7 +6,10 @@ import "./style.scss";
 const CallToAction = (props) => {
     // {text, icon, action}
     return (
-        <div className="call-to-action">
+        <div
+            className="call-to-action"
+            onClick={props.action}
+        >
             <span className="text">{props.text}</span>
             {props.icon ? (
                 <div className="icon">{props.icon}</div>

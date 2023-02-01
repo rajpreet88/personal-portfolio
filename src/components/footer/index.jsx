@@ -34,6 +34,14 @@ const Footer = () => {
                 <ul className="footer-menu-items">
                     <li
                         className="footer-menu-item"
+                        onClick={() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                    >
+                        Home
+                    </li>
+                    <li
+                        className="footer-menu-item"
                         onClick={() => scrollToSection("skills")}
                     >
                         Skills
@@ -48,7 +56,7 @@ const Footer = () => {
                         className="footer-menu-item"
                         onClick={() => scrollToSection("blogs")}
                     >
-                        Blogs
+                        Blogs & Articles
                     </li>
                     <li
                         className="footer-menu-item"
@@ -72,22 +80,22 @@ const Footer = () => {
                 <SocialIcon
                     color="#0A66C2"
                     icon={<FaLinkedin />}
-                    link="https://github.com/rajpreet88"
+                    link="https://www.linkedin.com/in/preetam-sahu-ps338800/"
                 />
                 <SocialIcon
                     color="#C13584"
                     icon={<FaInstagram />}
-                    link="https://github.com/rajpreet88"
+                    link="https://instagram.com/preetamaol/"
                 />
                 <SocialIcon
                     color="#1DA1F2"
                     icon={<FaTwitter />}
-                    link="https://github.com/rajpreet88"
+                    link="https://twitter.com/preetamaol"
                 />
                 <SocialIcon
                     color="#0088cc"
                     icon={<FaTelegramPlane />}
-                    link="https://github.com/rajpreet88"
+                    link=" https://t.me/preetamaol"
                 />
             </div>
             <div className="bottom-bar">
